@@ -11,7 +11,7 @@ const LandingPage = () => {
   const products = useSelector((state) => state.products.allProducts || []);
 
   useEffect(() => {
-    console.log('Elya - landingPage component rendered twice error');
+    // console.log('Elya - landingPage component rendered twice error');
     dispatch(thunkGetAllProducts());
   }, [dispatch]);
 

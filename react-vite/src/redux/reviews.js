@@ -8,7 +8,7 @@ export const getReviewsByProductId = (productId) => async (dispatch) => {
     if (response.ok) {
         const data = await response.json()
         if (data.errors) {
-            console.log(data.errors)
+            // console.log(data.errors)
         }
         dispatch(getReviews(productId, data))
     }
